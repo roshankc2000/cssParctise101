@@ -1,0 +1,42 @@
+/* The * selector selects all elements. */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    margin: 100px;
+}
+
+/* This is Id selector example! */
+#firstId {
+  color: red;
+}
+
+/* This is Id selector example! */
+.secondId {
+  color: green;
+}
+
+/* This is Element Selector! */
+h1 {
+  color: pink;
+}
+
+/* This is element.class selector */
+p.intro {
+  color: rgba(4, 83, 83, 0.697);
+}
+
+/* Select all elements inside <div> elements and set their background color to yellow: */
+/* Demo of the * selector */
+div * {
+  color: violet;
+  font-size: 2rem;
+}
+
+/* Demo of the element, element selector */
+h3,
+h4 {
+  color: rgb(5, 101, 69);
+}
