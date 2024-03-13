@@ -1,0 +1,44 @@
+.parent {
+  background-color: pink;
+  padding: 10px;
+}
+.child {
+  margin-block: 2px;
+  padding-block: 2px;
+  padding-inline: 10px;
+}
+.child-one {
+  background-color: green;
+}
+.child-two {
+  background-color: orange;
+}
+.child-three {
+  background-color: black;
+  color: white;
+}
+
+/* static: its the default behavoiur */
+
+/* realtive(removed from DOM and like its floating and can overlap so not used with TRBL) : same like static but it can now move TRBL with reference to its original position*/
+
+/* .child-one {
+    position: relative;
+    left: 25px;
+    top: 25px;
+  } */
+
+/* .
+  .
+  .
+  .
+  .
+  . */
+  
+/* absolute : its almost same like relative but it */
+
+/* .child-one {
+    position: relative;
+    left: 25px;
+    top: 25px;
+  } */
