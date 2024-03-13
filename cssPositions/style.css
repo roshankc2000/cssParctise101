@@ -1,84 +1,97 @@
 .parent {
-    background-color: pink;
-    padding: 10px;
-  }
-  .child {
-    margin-block: 2px;
-    padding-block: 2px;
-    padding-inline: 10px;
-  }
-  .child-one {
-    background-color: green;
-  }
-  .child-two {
-    background-color: orange;
-  }
-  .child-three {
-    background-color: black;
-    color: white;
-  }
-  
-  /* static: its the default behavoiur */
-  
-  /* realtive(removed from DOM and like its floating and can overlap so not used with TRBL) : same like static but it can now move TRBL with reference to its original position*/
-  
-  /* .child-one {
-    position: relative;
-    left: 25px;
-    top: 25px;
-  } */
-  
-  /* .
-  .
-  .
-  .
-  .
-  . */
-  
-  /* absolute : its almost same like relative but it take positioning with respect to its parent element.
-  ex: the div with class parent is parent of this class child-one.
-  its parent it static then, this child-one will inherit its position from above parents i.e. body and even its static to it goes to root and since its static so absolute will pick the child-one and remove it from flow and set to top of the same position whre its supposed to be. 
-  
-  */
-  
-  /* normal condition when everything is at static and no TRBL is used. */
-  /* .child-one {
-    position: absolute;
-  } */
-  
-  /* static and TRBL being used */
-  /* it will go and stick to the top of root level */
-  /* .child-one{
-    position:absolute;
-    top:0px;
-  } */
-  
-  /* relative and TRBL */
-  /* now the child will stick to the top of parent and not to the root */
-  /* .parent{
-    position:relative;
-  }
-  .child-one{
-    position:absolute;
-    top:0px;
-  } */
-  
-  /* FIXED */
-  /* its almost same like absolute but it is directly connected to root and not with any other parent element. */
-  /* example we can make a floating chat bot on botom */
-  .chatBot{
-    background-color:red;
-    color:white;
-    font-size:3rem;
-    padding:10px;
-    width:50px;
-    height:50px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:2px solid black;
-    border-radius:100%;
-    position:fixed;
-    bottom:15px;
-    right:15px;
-  }
+  background-color: pink;
+  padding: 10px;
+}
+.child {
+  margin-block: 2px;
+  padding-block: 2px;
+  padding-inline: 10px;
+}
+.child-one {
+  background-color: green;
+}
+.child-two {
+  background-color: orange;
+}
+.child-three {
+  background-color: black;
+  color: white;
+}
+
+/* static: its the default behavoiur */
+
+/* realtive(removed from DOM and like its floating and can overlap so not used with TRBL) : same like static but it can now move TRBL with reference to its original position*/
+
+/* .child-one {
+  position: relative;
+  left: 25px;
+  top: 25px;
+} */
+
+/* .
+.
+.
+.
+.
+. */
+
+/* absolute : its almost same like relative but it take positioning with respect to its parent element.
+ex: the div with class parent is parent of this class child-one.
+its parent it static then, this child-one will inherit its position from above parents i.e. body and even its static to it goes to root and since its static so absolute will pick the child-one and remove it from flow and set to top of the same position whre its supposed to be. 
+
+*/
+
+/* normal condition when everything is at static and no TRBL is used. */
+/* .child-one {
+  position: absolute;
+} */
+
+/* static and TRBL being used */
+/* it will go and stick to the top of root level */
+/* .child-one{
+  position:absolute;
+  top:0px;
+} */
+
+/* relative and TRBL */
+/* now the child will stick to the top of parent and not to the root */
+/* .parent{
+  position:relative;
+}
+.child-one{
+  position:absolute;
+  top:0px;
+} */
+
+/* FIXED */
+/* its almost same like absolute but it is directly connected to root and not with any other parent element. */
+/* example we can make a floating chat bot on botom */
+.chatBot{
+  background-color:red;
+  color:white;
+  font-size:3rem;
+  padding:10px;
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid black;
+  border-radius:100%;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  cursor:pointer;
+}
+
+/* sticky */
+/* its the combination of relative and fixed */
+/* initially its relative but as soon as it becomes outside of the page it becomes fixed */
+/* example the child-one will stay in its relative postion and when we will scroll down as soon as its hits the top or given position(here we gave 2px) it gets fixed */
+.parent{
+height:200vh;
+}
+.child-one{
+position:sticky;
+top:2px;
+}
