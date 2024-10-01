@@ -1,0 +1,19 @@
+.header-text {
+  text-align: center;
+}
+.section-green {
+  background-color: green;
+  color: white;
+}
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* to select only first item from  every list */
+li:first-of-type {
+  color: cyan;
+}
+/* using descendent selector we selected all elements within section-two and targeted li tag & with li + li:last-of-type we specified that we want last item of the list type */
+.section-two li + li:last-of-type {
+  color: red;
+  text-decoration: line-through;
+}
